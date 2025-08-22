@@ -27,4 +27,5 @@ class Player(BaseForChar):
         self.char_status.hp += hp
         self.char_status.attack += attack
         self.char_status.defense += defense
+        self.current_class.current_level += 1
         self.char_status.level += 1
