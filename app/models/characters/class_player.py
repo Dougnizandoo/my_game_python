@@ -1,5 +1,5 @@
-from app.models.base_for_char import BaseForChar,   Inventory
-from app.models.base_for_class import BaseForClass
+from app.models.characters.base_for_char import BaseForChar, Inventory
+from app.models.classes import BaseForClass
 from typing import Optional
 
 

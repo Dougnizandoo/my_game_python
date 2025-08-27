@@ -1,8 +1,8 @@
 from abc import ABC
 from dataclasses import dataclass
 from typing import Optional
-from app.models.base_for_item import BaseForItem
-from app.models.base_for_class import BaseForClass
+from app.models.itens import BaseForItem
+from app.models.classes import BaseForClass
 
 
 @dataclass

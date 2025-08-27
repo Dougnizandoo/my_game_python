@@ -26,7 +26,7 @@ class BaseForClass(ABC):
             self._apply_level_bonus()
     
     @property
-    def class_name(self) -> str:
+    def class_name(self):
         return self.__class__.__name__
 
     @property
@@ -57,6 +57,3 @@ class BaseForClass(ABC):
         self.levelup_points.hp += levelup_points[0]
         self.levelup_points.attack += levelup_points[1]
         self.levelup_points.defense += levelup_points[2]
-        if self.current_level > 3:
-            self.special_attack.heal += special_attack[0]
-        self.special_attack.attack += special_attack[1]
