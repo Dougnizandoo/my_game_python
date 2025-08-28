@@ -12,5 +12,10 @@ class EnumArmor(Enum):
     TUNIC = 3
 
 class EnumConsumables(Enum):
-    HEALING_POTION = 1
+    POTION = 1
     FOOD = 2
+
+class EnumStatus(Enum):
+    HP = 1
+    ATTACK = 2
+    DEFENSE = 3

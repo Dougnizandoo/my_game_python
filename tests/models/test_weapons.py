@@ -12,6 +12,7 @@ def test_create_weapons(make_weapon, stats, chosen_weapon, allowed):
     assert weapon.chosen_weapon.name == chosen_weapon.name
     assert weapon.weapon_stats.attack == stats.attack
     assert weapon.weapon_stats.heal == stats.heal
+    assert weapon.name == chosen_weapon.name
     assert set(weapon.who_can_use) == set(allowed)
 
 
