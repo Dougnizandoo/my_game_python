@@ -1,4 +1,5 @@
-from app.models.classes.base_for_class import BaseForClass, LevelUpPoints, SpecialAttack
+from app.models.classes.base_for_class import BaseForClass
+from app.models.dataclasses import SpecialAttack, LevelUpPoints
 
 
 class Warrior(BaseForClass):

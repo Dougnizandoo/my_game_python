@@ -1,6 +1,8 @@
 import pytest
-from app.models import Player, Warrior, Weapon, EnumWeapon, WeaponStats, Armor, EnumArmor
-from app.models import Consumable, EnumConsumables
+from app.models import Warrior, Weapon, Armor, Consumable
+from app.models import EnumArmor, EnumWeapon, EnumConsumables
+from app.models import WeaponStats
+from app.models import Enemy, Player
 
 @pytest.fixture
 def get_player():
@@ -43,3 +45,16 @@ def make_consumable():
             consumable_effects= consumable_effects
         )
     return _make_consumable
+
+
+@pytest.fixture
+def make_enemy():
+    def _make_enemy(enemy_type=None, enemy_hp=None, enemy_attack=None, enemy_defense=None):
+        return Enemy(
+            enemy_type=enemy_type,
+            enemy_hp=enemy_hp,
+            enemy_attack=enemy_attack,
+            enemy_defense=enemy_defense
+        )
+    return _make_enemy
+

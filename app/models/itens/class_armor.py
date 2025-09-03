@@ -1,17 +1,6 @@
-from dataclasses import dataclass, field
 from app.models.itens.base_for_item import BaseForItem
-from app.models.classes import EnumClasses
-from app.models.itens.enum_itens import EnumArmor, EnumStatus
-
-
-
-@dataclass
-class ArmorStats:
-    defense: int = 0
-    status_to_upgrade: dict[EnumStatus, int] = field(
-        default_factory=lambda: {EnumStatus.HP: 0}
-    )
-
+from app.models.enums import EnumArmor, EnumClasses
+from app.models.dataclasses import ArmorStats
 
 class Armor(BaseForItem):
     def __init__(self, armor_chosen: EnumArmor = None, 

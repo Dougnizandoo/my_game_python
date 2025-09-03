@@ -1,12 +1,6 @@
 from app.models.itens.base_for_item import BaseForItem
-from dataclasses import dataclass, field
-from app.models.itens.enum_itens import EnumStatus, EnumConsumables
-from app.models.classes.enum_classes import EnumClasses
-
-
-@dataclass
-class StatusBoost:
-    modifiers: dict[EnumStatus, int] = field(default_factory=lambda: {EnumStatus.HP: 3})
+from app.models.enums import EnumConsumables, EnumClasses
+from app.models.dataclasses import StatusBoost
 
 
 class Consumable(BaseForItem):

@@ -1,13 +1,7 @@
 from app.models.itens.base_for_item import BaseForItem
-from app.models.itens.enum_itens import EnumWeapon
-from app.models.classes import EnumClasses
-from dataclasses import dataclass
+from app.models.enums import EnumWeapon, EnumClasses
+from app.models.dataclasses import WeaponStats
 
-
-@dataclass
-class WeaponStats:
-    attack: int = 0
-    heal: int = 0
 
 class Weapon(BaseForItem):
     def __init__(self, 

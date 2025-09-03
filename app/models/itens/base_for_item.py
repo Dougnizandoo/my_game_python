@@ -1,5 +1,5 @@
 from abc import ABC
-from app.models.classes import EnumClasses
+from app.models.enums import EnumClasses
 
 
 class BaseForItem(ABC):

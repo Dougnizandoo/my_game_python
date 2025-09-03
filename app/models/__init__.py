@@ -1,12 +1,13 @@
-from app.models.characters import Player
-from app.models.classes import SpecialAttack, LevelUpPoints, Warrior, EnumClasses
-from app.models.itens import Weapon, EnumWeapon, WeaponStats, EnumStatus, EnumArmor, Armor, ArmorStats, Consumable, StatusBoost, EnumConsumables
+from app.models.characters import Player, Enemy
+from app.models.classes import Warrior
+from app.models.itens import Weapon, Armor, Consumable
+from app.models.enums import EnumArmor, EnumClasses, EnumConsumables, EnumStatus, EnumWeapon, EnumEnemy
+from app.models.dataclasses import ArmorStats, CharStatus, Inventory, Equipment, LevelUpPoints, SpecialAttack, StatusBoost, WeaponStats
 
 
-__all__ = ['Player', 
-           'EnumClasses', 'Warrior',
-           'SpecialAttack', 'LevelUpPoints',
-           'Weapon', 'EnumWeapon', 'WeaponStats',
-           'Armor', 'ArmorStats', 'EnumStatus', 'EnumArmor',
-           'Consumable', 'StatusBoost', 'EnumConsumables'
+__all__ = ['Player', 'Enemy',
+           'Warrior',
+           'Weapon', 'Armor', 'Consumable',
+           'EnumArmor', 'EnumClasses', 'EnumConsumables', 'EnumStatus', 'EnumWeapon', 'EnumEnemy',
+           'ArmorStats', 'CharStatus', 'Inventory', 'Equipment', 'LevelUpPoints', 'SpecialAttack', 'StatusBoost', 'WeaponStats'
            ]

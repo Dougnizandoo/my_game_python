@@ -1,6 +1,7 @@
-from app.models.characters.base_for_char import BaseForChar, Inventory
+from app.models.characters.base_for_char import BaseForChar
 from app.models.classes import BaseForClass
 from typing import Optional
+from app.models.dataclasses import Inventory
 
 
 class Player(BaseForChar):
